@@ -49,9 +49,9 @@ public class RXiangDui extends CustomRelic {
     public String getUpdatedDescription() {
         String ret = "";
         for (String a : this.DESCRIPTIONS) {
-            ret = ret + "\n\n\r\b" + a;
+            ret = ret + " NL " + a;
         }
-        ret = ret + "\n\n\rVia\b    takso\b estas:" + RXiangDui.Xds + "\n\n\rVia\b  sperto\b    estas:" + RXiangDui.Zjy;
+        //ret = ret + " NL  NL Via\b takso\b estas:" + RXiangDui.Xds + " NL  NL Via\b sperto\b estas:" + RXiangDui.Zjy;
         return ret;
     }
 
@@ -137,7 +137,10 @@ public class RXiangDui extends CustomRelic {
             p.heal(Xds);
         }
         String ret = "";
-        ret = ret + "\n\n\rVia\b    takso\b estas:" + RXiangDui.Xds + "\n\n\rVia\b  sperto\b    estas:" + RXiangDui.Zjy;
+        for (String a : this.DESCRIPTIONS) {
+            ret = ret + " NL " + a;
+        }
+        ret = ret + " NL  NL Via\b takso\b estas:" + RXiangDui.Xds + " NL  NL Via\b sperto\b estas:" + RXiangDui.Zjy;
         this.tips.clear();
         this.tips.add(new PowerTip(this.name, ret));
         this.initializeTips();

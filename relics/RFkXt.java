@@ -46,9 +46,7 @@ public class RFkXt extends AbstractClickRelic {
     public String getUpdatedDescription() {
         String ret = "";
         for (String a : this.DESCRIPTIONS) {
-            ret = ret + "\n" +
-                    "\n" +
-                    "\r  " + a;
+            ret = ret + " NL " + a;
         }
         //ret=ret+ "\n你当前相对为："+Xds+"\n你当前总经验为："+Zjy;
         return ret;
