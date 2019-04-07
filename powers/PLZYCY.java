@@ -22,7 +22,11 @@ public class PLZYCY extends AbstractPower {
     }
     @Override
     public void updateDescription() {
-        this.description = PLZYCY.DESCRIPTIONS[0]+"\n" + this.amount + PLZYCY.DESCRIPTIONS[1]+"\n"+this.amount+PLZYCY.DESCRIPTIONS[2];
+        String ret = "";
+        for (String a : this.DESCRIPTIONS) {
+            ret = ret + " NL " + a;
+        }
+        this.description = ret;
     }
 
     @Override

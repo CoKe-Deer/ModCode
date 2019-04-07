@@ -57,7 +57,7 @@ public class PLLDDJ extends AbstractPower {
     public void updateDescription() {
         String ret = "";
         for (String a : this.DESCRIPTIONS) {
-            ret = ret + "\n" + a;
+            ret = ret + " NL " + a;
         }
         this.description = ret;
     }

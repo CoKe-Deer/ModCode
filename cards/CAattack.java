@@ -50,6 +50,7 @@ public class CAattack extends CustomCard {
         if (this.cs % 3 == 0) {
             AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new CAattack_t(this.timesUpgraded).makeCopy(), 1, false));
             //AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new CFx().makeCopy(), 1, false));
+           // AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new CFxAttack().makeCopy(), 1, false));
         }
 
         //抽一张牌

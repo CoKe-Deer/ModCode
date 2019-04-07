@@ -42,7 +42,7 @@ public class PHWYB extends AbstractPower {
 
     @Override
     public void updateDescription() {
-        this.description = PHWYB.DESCRIPTIONS[0] + "\n" + PHWYB.DESCRIPTIONS[1];
+        this.description = PHWYB.DESCRIPTIONS[0] + " NL " + PHWYB.DESCRIPTIONS[1];
     }
 
     @Override

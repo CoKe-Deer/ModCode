@@ -22,7 +22,7 @@ public class CJDB extends CustomCard {
     public static final String DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION;
     public static final String IMG_PATH = "images/cards/CJDB.png";
-    private static final int COST = 2;
+    private static final int COST = 0;
     private static final int ATTACK_DMG = 1;//6
 
     public CJDB() {
@@ -39,7 +39,7 @@ public class CJDB extends CustomCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeBaseCost(0);
-            this.upgradeMagicNumber(2);
+            this.upgradeMagicNumber(5);
         }
     }
 

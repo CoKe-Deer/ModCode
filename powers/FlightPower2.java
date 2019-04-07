@@ -1,5 +1,6 @@
 package com.megacrit.cardcrawl.powers;
 
+import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.core.*;
 import com.megacrit.cardcrawl.cards.*;
@@ -21,7 +22,7 @@ public class FlightPower2 extends AbstractPower
         this.amount = amount;
         this.storedAmount = amount;
         this.updateDescription();
-        this.loadRegion("flight");
+        this.img = new Texture("images/powers/Flight2.png");
         this.priority = 50;
         //System.out.println("正在启动3");
     }
@@ -60,11 +61,11 @@ public class FlightPower2 extends AbstractPower
 
     @Override
     public int onAttacked(final DamageInfo info, final int damageAmount) {
-        final Boolean willLive = this.calculateDamageTakenAmount(damageAmount, info.type) < this.owner.currentHealth;
+        /*final Boolean willLive = this.calculateDamageTakenAmount(damageAmount, info.type) < this.owner.currentHealth;
         if (info.owner != null && info.type != DamageInfo.DamageType.HP_LOSS && info.type != DamageInfo.DamageType.THORNS && damageAmount > 0 && willLive) {
             this.flash();
             //AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(this.owner, this.owner, "Flight2", 1));
-        }
+        }*/
         return damageAmount;
     }
 
