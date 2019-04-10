@@ -5,3 +5,6 @@
 
 
 https://drive.google.com/open?id=1bqTCrpxL2sJJHyYdlV-BIQu4DSY4DGz4
+
+
+https://drive.google.com/file/d/1bqTCrpxL2sJJHyYdlV-BIQu4DSY4DGz4/view?usp=sharing
